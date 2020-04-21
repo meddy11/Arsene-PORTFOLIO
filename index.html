@@ -1,212 +1,210 @@
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/mobile.css">
-        <title>Arsene-Steed</title>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <title>Arsene-Steed</title>
 
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163948789-1"></script>
-            <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163948789-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'UA-163948789-1');
-            </script>
+        gtag('config', 'UA-163948789-1');
+        </script>
 
-    </head>
-    <body>
-        <main>
-            <!-- NAV MOBILE FIRST -->
-            <!-- <nav> -->
-                <nav class="mobile">
-                    <ul class="ull">
-                        <li><a href="#ACCUEIL" class="a">ACCUEIL</a></li>
-                        <li><a href="#A-PROPOS" class="a">A PROPOS</a></li>
-                        <li><a href="#REALISATION" class="a">REALISATION</a></li>
-                    </ul>
-                </nav>
-            <!-- </nav> -->
-            <!-- HEADER -->
-            <header>
-            <!-- NAV DESKTOP -->            
-            <nav class="desktop">
-                <ul>
-                    <li><button><a href="#ACCUEIL">ACCUEIL</a></button></li>
-                    <li><button><a href="#A-PROPOS">A PROPOS</a></button></li>
-                    <li><button><a href="#COMPETENCE">COMPETENCE</a></button></li>
-                    <li><button><a href="#REALISATION">REALISATION</a></button></li>
-                    <li><button><a href="#INFOS">INFOS</a></button></li>
-                </ul>
-            </nav>
-                <section id="ACCUEIL" class="acceui">
-                    <div class="contenair-header">
-                        <div class="img-presentation">
-                            <img src="assets/img/img1.jpg" alt="MIHINDOU-NZE Arsene Steed" width="320px">
-                        </div>
-                        <div class="presentation">
-                            <h1>Développeur Web & Mobile</h1>
-                            <p>Moi c'est <strong>MIHINDOU-NZE Arsene Steed,</strong>  heureux de vous connaître...</p>
-                            <button>MON CV</button>
-                        </div>
-                    </div>
-                </section>
-            </header>
-            <!-- A PROPOS DE MOI -->
-            <section id="A-PROPOS">
-                <div class="contenair-apropos">
-                    <div class="apropos main">
-                        <h2>A propos de moi</h2>
-                        <p id="readless">
-                            Je suis <strong>MIHINDOU NZE Arsene Steed </strong>Développeur Web à l'école 241.Passionné du code et des difficultes,
-                            j'ai l'humble avis de penser que le code est un atout idéal pour nous aider à apporter des solutions aux problèmes que nous pouvons rencontrer dans la vie de tous les jours et même plus.<encore class="span" id="dots">...</encore>
-                        </p>
-                        <p id="readmore">    
-                            Aujourd'hui, je me sens prêt à intégrer une entreprise où je pourrai quotidiennement vivre de ma passion : Le Développement Web ! Moi c'est Arsene, 23 ans, 
-                            et j'ai pris la décision de me reconvertir professionnellement.<br>
-                            <strong>"La solution est dans le code."</strong>
-                        </p>
-                        <button id="Read" onclick="Read()" class="Btn">Lire la suite</button>
-                        <a href="mihindoumeddy@gmail.com">arsene@okacode.dev</a>
-                    </div>
+</head>
+<body>
+    <main>
+        <header>
+        <!-- NAV MOBILE FIRST -->
+            <div id="hamburger">
+                <div id="hamburger-content">
+                    <nav>
+                        <ul>
+                            <li><a href="#REALISATION">REALISATION</a></li>
+                            <li><a href="#A-PROPOS">A PROPOS</a></li>
+                            <li><a href="#COMPETENCE">COMPETENCE</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </section>
-            <!-- COMPETENCE -->
-            <section id="COMPETENCE">
-                <div class="skill">
-                    <h2 class="title" id="skill">Competences</h2>
-                        <div class="contenair-skill">
-                        <div class="skill__progress_bar">
-                            <div>
-                                <h2>FRONT-END</h2>
-                                <div class="info__bar">
-                                    HTML5 <span>90%</span>
-                                </div>
-                                <div class="bar">
-                                    <div class="html5 progress__bar"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="info__bar">
-                                    CSS3 / SCSS <span>80%</span>
-                                </div>
-                                <div class="bar">
-                                    <div class="css3 progress__bar"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="info__bar">
-                                    JavaScript / TypeScript <span>20%</span>
-                                </div>
-                                <div class="bar">
-                                    <div class="javascript progress__bar"></div>
-                                </div>
-                            </div>                   
-                        </div>
-                        <!-- back-end  -->
-                        <div class="skill__progress_bar">
-                            <div>
-                                <H2>BACK-END</H2>
-                            </div>
-                            <div>
-                                <div class="info__bar">
-                                    Python3 <span>10%</span>
-                                </div>
-                                <div class="bar">
-                                    <div class="python3 progress__bar"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="info__bar">
-                                    PHP7 <span>10%</span>
-                                </div>
-                                <div class="bar">
-                                    <div class="php progress__bar"></div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="info__bar">
-                                    MySQL <span>10%</span>
-                                </div>
-                                <div class="bar">
-                                    <div class="mysql progress__bar"></div>
-                                </div>
-                            </div>                   
-                        </div> 
+                <button id="hamburger-button">MENU&#9776;</button>
+                <div id="hamburger-sidebar">
+                    <div id="hamburger-sidebar-header"></div>
+                    <div id="hamburger-sidebar-body"></div>
+                </div> 
+                <div id="hamburger-overlay"></div>     
+            </div>
+        <!-- NAV DESKTOP -->            
+        <nav class="desktop">
+            <ul>
+                <li><button><a href="#ACCUEIL">ACCUEIL</a></button></li>
+                <li><button><a href="#A-PROPOS">A PROPOS</a></button></li>
+                <li><button><a href="#COMPETENCE">COMPETENCE</a></button></li>
+                <li><button><a href="#REALISATION">REALISATION</a></button></li>
+                <li><button><a href="#INFOS">INFOS</a></button></li>
+            </ul>
+        </nav>
+            <section id="ACCUEIL" class="acceui">
+                <div class="contenair-header">
+                    <div class="img-presentation">
+                        <img src="assets/img/img1.jpg" alt="MIHINDOU-NZE Arsene Steed" width="320px">
                     </div>
-                </div>
-            </section>
-            <!-- REALISATION -->
-            <SECTION id="REALISATION">
-                <div class="contenair-realisation">
-                    <h3>Realisations</h3>
-                    <div class="realisation">
-                        <div class="lienrealisation">
-                            <img src="assets/img/lettre.png" alt="Lettre motivation" title="Lettre de motivation" width="350px" 350px>
-                        </div>
-                        <div class="lienrealisation">
-                            <img src="assets/img/liste.png" alt="Liste okacode" title="LISTE okacode" width="300px">
-                        </div>
-                        <div class="lienrealisation">
-                            <img src="assets/img/portfolio.png" alt="Premier portfolio" title="Premier portfolio" width="350px">
-                        </div>
-                    </div>
-                </div>
-            </SECTION>
-            <!-- FOOTER -->
-            <footer>
-                <section id="INFOS">
-                    <div class="contenair-infos">
-                            <div class="monBlog">
-                                <p>
-                                    <strong>MON BLOG</strong><br></br>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, earum suscipit adipisci perspiciatis reprehenderit
-                                    quidem mollitia 
-                                    vitae maxime, consequuntur dicta expedita, numquam iure quia perferendis vero labore laudantium accusantium eligendi?
-                                </p>
-                            </div>
-                            <div class="ul">
-                                <h3>PLUS D'INFOS</h3>
+                    <div class="presentation">
+                        <h1 class="H-pc">Développeur Web & Mobile</h1>
+                        <h1 class="H-mobile">MIHINDOU-NZE Arsene S.</h1>
+                        <span class="presentationMobile"><p>Developpeur <strong>Front-end et Back-end</strong></p></span>
+                        <div class="premierP"><p>Moi c'est <strong>MIHINDOU-NZE Arsene Steed,</strong> heureux de vous connaître...</p></div>
+                        <button>MON CV</button>
+                        <div class="bodyHeader">
+                            <div class="contenair-ul">
                                 <ul>
-                                    <li><a href="#ACCUEIL">ACCUEIL</a></li>
-                                    <li><a href="#">MON BLOG</a></li>
-                                    <li><a href="#">FACEBOOCK</a></li>
+                                    <li><div class="li-colon"><a href="mihindoumeddy@gmail.com">E-mail</a></div></li>
+                                    <li><div class="li-colon"><a href="mihindoumeddy@gmail.com">CV</a></div></li>
+                                    <li><div class="li-colon"><a href="#A-PROPOS">A-PROPOS</a></div></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </section>
-                <p class="fait-par"> ©Copyright by MIHINDOU-NZE - 2020 0KACODE</p>
-            </footer>
-            <!-- ==========
-            script button read
-            ============ -->
-            <script>
-                var i = 0;
-                var readmore = document.getElementById('readmore');
-                var dots = document.getElementById('dots');
-                var btn = document.getElementById('Read');
-                function Read()
-                {
-                    if(i==0)
-                    {
-                        readmore.style.display="block"; 
-                        dots.style.display="none";
-                        btn.innerHTML = "La suite";
-                        i=1;
-                    }
-                    else
-                    {
-                        readmore.style.display="none"; 
-                        dots.style.display="block";
-                        btn.innerHTML = "Lire la suite"; 
-                        i=0;                   
-                    }
-                }
-            </script>
-        </main>
-    </body>
-    </html>
+                </div>
+            </section>
+        </header>
+        <!-- A PROPOS DE MOI -->
+        <section id="A-PROPOS">
+            <div class="contenair-apropos">
+                <div class="apropos main">
+                    <h2>A propos de moi</h2>
+                    <p id="readless">
+                        Je suis <strong>MIHINDOU NZE Arsene Steed </strong>Développeur Web et Web mobile à l'école 241.Passionné du code et des difficultes,
+                        j'ai l'humble avis de penser que le code est un atout idéal pour nous aider à apporter des solutions aux problèmes que nous pouvons rencontrer dans la vie de tous les jours et même plus.<encore class="span" id="dots">[...]</encore>
+                    </p>
+                    <p id="readmore">    
+                        Aujourd'hui, je me sens prêt à intégrer une entreprise où je pourrai quotidiennement vivre de ma passion : Le Développement Web ! <strong>Moi c'est Arsene, 23 ans,</strong> 
+                        et j'ai pris la décision de me reconvertir professionnellement.<br>
+                        <strong>"La solution est dans le code."</strong>
+                    </p>
+                    <button id="Read" onclick="Read()" class="Btn">Lire la suite</button>
+                    <a href="mihindoumeddy@gmail.com">arsene@okacode.dev</a>
+                </div>
+            </div>
+        </section>
+        <!-- COMPETENCE -->
+        <section id="COMPETENCE">
+            <div class="skill">
+                <h2 class="title" id="skill">Competences</h2>
+                    <div class="contenair-skill">
+                    <div class="skill__progress_bar">
+                        <div>
+                            <h2>FRONT-END</h2>
+                            <div class="info__bar">
+                                HTML5 <span>90%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="html5 progress__bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info__bar">
+                                CSS3 / SCSS <span>80%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="css3 progress__bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info__bar">
+                                JavaScript / TypeScript <span>20%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="javascript progress__bar"></div>
+                            </div>
+                        </div>                   
+                    </div>
+                    <!-- back-end  -->
+                    <div class="skill__progress_bar">
+                        <div>
+                            <H2>BACK-END</H2>
+                        </div>
+                        <div>
+                            <div class="info__bar">
+                                Python3 <span>10%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="python3 progress__bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info__bar">
+                                PHP7 <span>10%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="php progress__bar"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="info__bar">
+                                MySQL <span>10%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="mysql progress__bar"></div>
+                            </div>
+                        </div>                   
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- REALISATION -->
+        <SECTION id="REALISATION">
+            <div class="contenair-realisation">
+                <h3>Realisations</h3>
+                <div class="realisation">
+                    <div class="lienrealisation">
+                        <img src="assets/img/lettre.png" alt="Lettre motivation" title="Lettre de motivation" width="350px" 350px>
+                    </div>
+                    <div class="lienrealisation">
+                        <img src="assets/img/liste.png" alt="Liste okacode" title="LISTE okacode" width="300px">
+                    </div>
+                    <div class="lienrealisation">
+                        <img src="assets/img/portfolio.png" alt="Premier portfolio" title="Premier portfolio" width="350px">
+                    </div>
+                </div>
+            </div>
+        </SECTION>
+        <!-- FOOTER -->
+        <footer>
+            <section id="INFOS">
+                <div class="contenair-infos">
+                        <div class="monBlog">
+                            <p>
+                                <strong>MON BLOG</strong><br></br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, earum suscipit adipisci perspiciatis reprehenderit
+                                quidem mollitia 
+                                vitae maxime, consequuntur dicta expedita, numquam iure quia perferendis vero labore laudantium accusantium eligendi?
+                            </p>
+                        </div>
+                        <div class="ul">
+                            <h3>PLUS D'INFOS</h3>
+                            <ul>
+                                <li><a href="#ACCUEIL">ACCUEIL</a></li>
+                                <li><a href="#">MON BLOG</a></li>
+                                <li><a href="#">FACEBOOCK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p class="fait-par"> ©Copyright by MIHINDOU-NZE - 2020 0KACODE</p>
+        </footer>
+        <!-- ==========
+        script button read
+        ============ -->
+        <script>
+var i=0,readmore=document.getElementById("readmore"),dots=document.getElementById("dots"),btn=document.getElementById("Read");function Read(){0==i?(readmore.style.display="block",dots.style.display="none",btn.innerHTML="Fermer",i=1):(readmore.style.display="none",dots.style.display="block",btn.innerHTML="Lire la suite",i=0)}var content=document.querySelector("#hamburger-content"),sidebarBody=document.querySelector("#hamburger-sidebar-body"),button=document.querySelector("#hamburger-button"),overlay=document.querySelector("#hamburger-overlay"),activatedClass="hamburger-activated";sidebarBody.innerHTML=content.innerHTML,button.addEventListener("click",function(e){e.preventDefault(),this.parentNode.classList.add(activatedClass)}),button.addEventListener("keydown",function(e){this.parentNode.classList.contains(activatedClass)&&!1===e.repeat&&27===e.which&&this.parentNode.classList.remove(activatedClass)}),overlay.addEventListener("click",function(e){e.preventDefault(),this.parentNode.classList.remove(activatedClass)});
+        </script>
+    </main>
+</body>
+</html>
