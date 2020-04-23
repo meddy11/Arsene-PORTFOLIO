@@ -199,27 +199,7 @@
         script button read
         ============ -->
         <script>
-            var i = 0;
-            var readmore = document.getElementById('readmore');
-            var dots = document.getElementById('dots');
-            var btn = document.getElementById('Read');
-            function Read()
-            {
-                if(i==0)
-                {
-                    readmore.style.display="block"; 
-                    dots.style.display="none";
-                    btn.innerHTML = "Fermer";
-                    i=1;
-                }
-                else
-                {
-                    readmore.style.display="none"; 
-                    dots.style.display="block";
-                    btn.innerHTML = "Lire la suite"; 
-                    i=0;                   
-                }
-            }
+var i=0,readmore=document.getElementById("readmore"),dots=document.getElementById("dots"),btn=document.getElementById("Read");function Read(){0==i?(readmore.style.display="block",dots.style.display="none",btn.innerHTML="Fermer",i=1):(readmore.style.display="none",dots.style.display="block",btn.innerHTML="Lire la suite",i=0)}
         </script>
     </main>
     Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="flat"> <p></p>www.flaticon.com</a>
