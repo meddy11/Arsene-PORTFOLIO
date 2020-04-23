@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    
     <title>Arsene-Steed</title>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -21,38 +22,25 @@
 <body>
     <main>
         <header>
-        <!-- NAV MOBILE FIRST -->
-            <div id="hamburger">
-                <div id="hamburger-content">
-                    <nav>
-                        <ul>
-                            <li><a href="#REALISATION">REALISATION</a></li>
-                            <li><a href="#A-PROPOS">A PROPOS</a></li>
-                            <li><a href="#COMPETENCE">COMPETENCE</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <button id="hamburger-button">MENU&#9776;</button>
-                <div id="hamburger-sidebar">
-                    <div id="hamburger-sidebar-header"></div>
-                    <div id="hamburger-sidebar-body"></div>
-                </div> 
-                <div id="hamburger-overlay"></div>     
+            <div class="nav">
+                <div class="logo"><h1>logo</h1></div>
+                <!-- NAV DESKTOP -->            
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="#ACCUEIL">ACCUEIL</a></li>
+                        <li><a href="#A-PROPOS">A PROPOS</a></li>
+                        <li><a href="#COMPETENCE">COMPETENCE</a></li>
+                        <li><a href="#REALISATION">REALISATION</a></li>
+                    </ul>
+                </nav>
             </div>
-        <!-- NAV DESKTOP -->            
-        <nav class="desktop">
-            <ul>
-                <li><button><a href="#ACCUEIL">ACCUEIL</a></button></li>
-                <li><button><a href="#A-PROPOS">A PROPOS</a></button></li>
-                <li><button><a href="#COMPETENCE">COMPETENCE</a></button></li>
-                <li><button><a href="#REALISATION">REALISATION</a></button></li>
-                <li><button><a href="#INFOS">INFOS</a></button></li>
-            </ul>
-        </nav>
             <section id="ACCUEIL" class="acceui">
                 <div class="contenair-header">
                     <div class="img-presentation">
                         <img src="assets/img/img1.jpg" alt="MIHINDOU-NZE Arsene Steed" width="320px">
+                    </div>
+                    <div class="imgPresentationMobile">
+                        <img src="assets/img/imgportfolio.jpg" alt="" width="320px" class="imgMOBILE">
                     </div>
                     <div class="presentation">
                         <h1 class="H-pc">Développeur Web & Mobile</h1>
@@ -65,7 +53,8 @@
                                 <ul>
                                     <li><div class="li-colon"><a href="mihindoumeddy@gmail.com">E-mail</a></div></li>
                                     <li><div class="li-colon"><a href="mihindoumeddy@gmail.com">CV</a></div></li>
-                                    <li><div class="li-colon"><a href="#A-PROPOS">A-PROPOS</a></div></li>
+                                    <li><div class="li-colon"><a href="#COMPETENCE">Skill</a></div></li>
+                                    <li><div class="li-colon"><a href="#A-PROPOS">A propos</a></div></li>
                                 </ul>
                             </div>
                         </div>
@@ -99,7 +88,7 @@
                     <div class="contenair-skill">
                     <div class="skill__progress_bar">
                         <div>
-                            <h2>FRONT-END</h2>
+                            <h2 class="front-end">FRONT-END</h2>
                             <div class="info__bar">
                                 HTML5 <span>90%</span>
                             </div>
@@ -160,16 +149,23 @@
         <!-- REALISATION -->
         <SECTION id="REALISATION">
             <div class="contenair-realisation">
-                <h3>Realisations</h3>
+                <h3 class="headline">Realisations</h3>
                 <div class="realisation">
                     <div class="lienrealisation">
-                        <img src="assets/img/lettre.png" alt="Lettre motivation" title="Lettre de motivation" width="350px" 350px>
+                        <img src="assets/img/lettre.png" alt="Lettre motivation" title="Lettre de motivation" width="350px">
+                        <div><a href="#">Lettre de motivation</a></div>
                     </div>
                     <div class="lienrealisation">
                         <img src="assets/img/liste.png" alt="Liste okacode" title="LISTE okacode" width="300px">
+                        <div><a href="#">Liste okacode</a></div>
                     </div>
                     <div class="lienrealisation">
                         <img src="assets/img/portfolio.png" alt="Premier portfolio" title="Premier portfolio" width="350px">
+                        <div><a href="#">Mon premier portfolio</a></div>
+                    </div>
+                    <div class="lienrealisation">
+                        <img src="assets/img/metojob.png" alt="Meteo-jobs" title="Meteo-jobs" width="350px">
+                        <div><a href="#">Integration img</a></div>
                     </div>
                 </div>
             </div>
@@ -203,8 +199,29 @@
         script button read
         ============ -->
         <script>
-var i=0,readmore=document.getElementById("readmore"),dots=document.getElementById("dots"),btn=document.getElementById("Read");function Read(){0==i?(readmore.style.display="block",dots.style.display="none",btn.innerHTML="Fermer",i=1):(readmore.style.display="none",dots.style.display="block",btn.innerHTML="Lire la suite",i=0)}var content=document.querySelector("#hamburger-content"),sidebarBody=document.querySelector("#hamburger-sidebar-body"),button=document.querySelector("#hamburger-button"),overlay=document.querySelector("#hamburger-overlay"),activatedClass="hamburger-activated";sidebarBody.innerHTML=content.innerHTML,button.addEventListener("click",function(e){e.preventDefault(),this.parentNode.classList.add(activatedClass)}),button.addEventListener("keydown",function(e){this.parentNode.classList.contains(activatedClass)&&!1===e.repeat&&27===e.which&&this.parentNode.classList.remove(activatedClass)}),overlay.addEventListener("click",function(e){e.preventDefault(),this.parentNode.classList.remove(activatedClass)});
+            var i = 0;
+            var readmore = document.getElementById('readmore');
+            var dots = document.getElementById('dots');
+            var btn = document.getElementById('Read');
+            function Read()
+            {
+                if(i==0)
+                {
+                    readmore.style.display="block"; 
+                    dots.style.display="none";
+                    btn.innerHTML = "Fermer";
+                    i=1;
+                }
+                else
+                {
+                    readmore.style.display="none"; 
+                    dots.style.display="block";
+                    btn.innerHTML = "Lire la suite"; 
+                    i=0;                   
+                }
+            }
         </script>
     </main>
+    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="flat"> <p></p>www.flaticon.com</a>
 </body>
 </html>
