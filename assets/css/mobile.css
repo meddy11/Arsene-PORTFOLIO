@@ -1,271 +1,107 @@
-/* MEDIA MOBILE FIRST */
-@media (max-width:769px)
+@media (max-width:414px)
 {
-    html{
-        scroll-behavior: smooth;
+    main,
+    .none{
+        display: none;
     }
     body{
         margin: 0;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-image: linear-gradient(to bottom,#000000d6,#171819b5), url('../img/imgattache.jpg');
-        background-attachment: fixed;
-        background-repeat: no-repeat;
     }
-    header{
-        height: 110vh;
+    .versionMobile{
+        height: 100vh;
     }
-    /* ACCCUEIL */
-    .imgPresentationMobile{
-        height: auto;
-        width: 65%;
-        margin: auto;
-    }
-    .imgPresentationMobile img{
+    .imgPorfil{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
         height: 100%;
         width: 100%;
-        object-fit: contain;
-        margin: auto;
-        margin-top: 25%;
+        background-image: linear-gradient(to bottom,#00000045,#2d2828c7),url(../img/img1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
-    .bodyHeader{
-        background-color: #d19178;
-        height: 12vh;
-        width: 95vw;
-        margin: auto;
-        border-radius: 25px;
+    .menuFooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 10vh;
+        width: 80%;
+        background-color: #656062;
+        margin-bottom: 10px;
+        border-radius: 50px;
     }
-    .bodyHeader ul{
+    .menuFooter .foot{
+        width: 100%;
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: space-around;
-        padding: 13px;
         list-style: none;
     }
-    .bodyHeader li{
-        text-align: center;
+    .foot li:nth-child(1){
+        border-right: 2px solid white;
+        padding-right: 50px;
+        background-image: url(../img/linkedin.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-    .contenair-ul li:nth-child(2){
-        padding-left: 20px;
-        border-left: 2px solid black;
+    .foot li:nth-child(2){
+        background-image: url(../img/email.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-    .contenair-ul li:nth-child(3){
-        padding-left: 20px;
-        border-left: 2px solid black;
+    .foot li:nth-child(3){
+        border-left: 2px solid white;
+        padding-left: 35px;
+        background-image: url(../img/cv.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
-    .contenair-ul li:nth-child(4){
-        padding-left: 5px;
-        border-left: 2px solid black;
+    .foot li{
+        height: 40px;
+        width: 50px;
+        display: block;
     }
-    .bodyHeader ul a{
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-    }
-    .contenair-ul li::before{
-        content: '';
-        width: 35px;
-        height: 35px;
-        display: inline-block;
-    }
-    .contenair-ul li:first-child::before{
-        background-image: url('../img/email.svg');
-    }
-    .contenair-ul li:nth-child(2)::before{
-        background-image: url('../img/cv.svg');
-    }
-    .contenair-ul li:nth-child(3)::before{
-        background-image: url('../img/seo-expert.svg');
-    }
-    .contenair-ul li:nth-child(4)::before{
-        background-image: url('../img/icon\ \(1\).svg');
-    }
-    /*  A PR0POS */
-    #A-PROPOS{
-        height: 100vh;
-    }
-    .apropos{
-        width: 85%;
-        height: auto;
-        margin: auto;
-        box-sizing: border-box;
-    }
-    #readmore{
-        display: none;
-    }
-    /* COMPETENCE */
-    #COMPETENCE{
-        height: 100vh;
-    }
-    .skill{
-        text-align: center;
-        width: 90%;
-        height: auto;
-        margin: auto;
-    }
-    /* bar skill style */
-    .skill__progress_bar{
+    .menu{
+        height: 15vh;
         width: 100%;
     }
-    .contenair-skill{
+    .presentation{
+        line-height: 35px;
+        color: white;
+        width: 90%;
+        margin-top: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 20%;
     }
-    .skill__boxes {
-     position: relative;
-     width: 20%;
-     height: auto;
-     }
-     /* TRITRE BAR*/
-    .info__bar{
-         padding-top: 8px;
-         font-style: italic;
-         color: #edf3f4;
-         display: flex;
-         justify-content: space-between;
-     }
-     .bar {
-         width: 100%;
-         height: 12px;
-         background-color: #edf3f4;
-     }
-     .bar .progress__bar {
-         background-color: #d19178;
-         height: 100%;
-     }
-     /*POGRESS BAR %*/
-     .html5{
-         width: 90%;
-     }
-     .css3 {
-         width: 80%;
-     }
-     .javascript{
-         width: 10%;
-     }
-     .python3{
-         width: 10%;
-     }
-     .php{
-         width: 10%;
-     }
-     .mysql{
-         width: 10%;
-     }
-     /*REALISATION*/
-     #REALISATION{
-         height: 100vh;
-     }
-     .contenair-realisation{
-         margin: auto;
-         width: 60%;
-     }
-     .contenair-realisation img{
-         margin: auto;
-         height: 100%;
-         width: 100%;
-     }
-     /* FOOTER */
-     footer{
-         display: none;
-     }
-     /* STYLE TITLE*/
-     h2, h3{
-         padding-top: 5%;
-        font-size: 1.6rem;
-        color: #edf3f4;
-        text-align: center;
+    .presentation span:nth-child(1){
+        font-size: 1.5em;
+        letter-spacing: 2px;
     }
-    .presentation .H-mobile{
-        margin-bottom: 0;
-        color: #edf3f4;
-        text-align: center;
-   } 
-    .apropos p{
-        line-height: 1.6;
-        text-align: justify;
-        font-size: 1.1rem;
-        color:#edf3f4;
-        font-style: italic;
+    .presentation span:nth-child(2){
+        font-size: 1.2em;
+        letter-spacing: 2px;
     }
-    .presentationMobile{
-        font-style: italic;
-        font-size: 1.3rem;
-        text-align: center;
-        color: #edf3f4;
+    .head{
+        padding: 0;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
     }
-    strong{
-        font-weight: 700;
-        color: #d19178;
+    .head li{
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        background:#656062;
+        padding: 5px;
     }
-    .apropos .Btn{
-        background: #d19178;
-        padding: 4%;
-        border-radius: 5px;
-        border: none;
-        font-size: 1.1rem;
-        color: #0f0f10;
-    }
-     /* DISPLAY NONE */
-     .img-presentation{
-         display: none;
-     }
-    .apropos a{
-        display: none;
-    }
-     .desktop{
-        display: none;
-    }
-    #hamburger-content{
-        display: none;
-    }
-    .presentation .premierP{
-        display: none;
-    }
-    .presentation button{
-        display: none;
-    }
-    .presentation .H-pc{
-        display: none;
-    }
-    .logo{
-        display: none;
-    }
-    #REALISATION{
-        display: none;
-    }
-    .flat{
-        display: none;
-    }
-        /*MEDIA QUERY IPHONE5*/
-        @media (max-width: 320px){
-            .contenair-ul li:nth-child(4) {
-                padding-left: 5px;
-                border: none;
-            }
-            .contenair-ul li:nth-child(2){
-                padding-left: 0;
-                border: none;
-            }
-            .contenair-ul li:nth-child(3){
-                padding-left: 0;
-                border: none;
-            }
-            .presentationMobile {
-                font-style: italic;
-                font-size: 1.1rem;
-                text-align: center;
-                color: #edf3f4;
-            }
-            .apropos p {
-                line-height: 1.3;
-                text-align: justify;
-                font-size: 1rem;
-                color: #edf3f4;
-                font-style: italic;
-            }
-            .bodyHeader {
-                height: 12vh;
-            } 
-        }
-    }
+}

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
     <title>Arsene-Steed</title>
 
@@ -23,38 +23,39 @@
     <main>
         <header>
             <div class="nav">
-                <div class="logo"><h1>logo</h1></div>
                 <!-- NAV DESKTOP -->            
                 <nav class="desktop">
                     <ul>
-                        <li><a href="#ACCUEIL">ACCUEIL</a></li>
-                        <li><a href="#A-PROPOS">A PROPOS</a></li>
-                        <li><a href="#COMPETENCE">COMPETENCE</a></li>
-                        <li><a href="#REALISATION">REALISATION</a></li>
+                        <li class="menu-acceuil">
+                            <div><img src="assets/img/open-menu.svg" alt=""width="40px"></div>
+                            <ul class="subMenu">
+                                <li><a href="#ACCUEIL" class="bg_c">ACCUEIL</a></li>
+                                <li><a href="#A-PROPOS" class="bg_c">A PROPOS</a></li>
+                                <li><a href="#COMPETENCE" class="bg_c">COMPETENCE</a></li>
+                                <li><a href="#REALISATION" class="bg_c">REALISATION</a></li>
+                                <li><a href="#INFOS" class="bg_c">CONTACTS</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                    
                 </nav>
             </div>
             <section id="ACCUEIL" class="acceui">
                 <div class="contenair-header">
-                    <div class="img-presentation">
-                        <img src="assets/img/img1.jpg" alt="MIHINDOU-NZE Arsene Steed" width="320px">
-                    </div>
-                    <div class="imgPresentationMobile">
-                        <img src="assets/img/imgportfolio.jpg" alt="" width="320px" class="imgMOBILE">
-                    </div>
                     <div class="presentation">
-                        <h1 class="H-pc">Développeur Web & Mobile</h1>
-                        <h1 class="H-mobile">MIHINDOU-NZE Arsene S.</h1>
-                        <span class="presentationMobile"><p>Developpeur <strong>Front-end et Back-end</strong></p></span>
-                        <div class="premierP"><p>Moi c'est <strong>MIHINDOU-NZE Arsene Steed,</strong> heureux de vous connaître...</p></div>
-                        <button>MON CV</button>
+
+                        <div class="p">
+                            <h1 class="H-pc">Développeur Web & Web Mobile</h1>
+                            <div class="premierP"><p>Moi c'est <strong>Arsene Steed,</strong> heureux de vous connaître...</p></div>
+                        </div>
+
                         <div class="bodyHeader">
                             <div class="contenair-ul">
                                 <ul>
-                                    <li><div class="li-colon"><a href="mihindoumeddy@gmail.com">E-mail</a></div></li>
-                                    <li><div class="li-colon"><a href="mihindoumeddy@gmail.com">CV</a></div></li>
-                                    <li><div class="li-colon"><a href="#COMPETENCE">Skill</a></div></li>
-                                    <li><div class="li-colon"><a href="#A-PROPOS">A propos</a></div></li>
+                                    <li><a href="#"><img src="assets/img/facebook.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/linkedin.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/img/github.png" alt=""></a></li>    
+                                    <li><a href="#"><img src="assets/img/twitter.png" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -64,27 +65,30 @@
         </header>
         <!-- A PROPOS DE MOI -->
         <section id="A-PROPOS">
+            <div class="imgApropos">
+                <img src="assets/img/img1.jpg" alt="MIHINDOU-NZE Arsene Steed" width="300px" class="imgProfil">
+            </div> 
+            <div class="menuFooter"></div> 
             <div class="contenair-apropos">
+                <h2>A propos de moi</h2>
                 <div class="apropos main">
-                    <h2>A propos de moi</h2>
                     <p id="readless">
-                        Je suis <strong>MIHINDOU NZE Arsene Steed </strong>Développeur Web et Web mobile à l'école 241.Passionné du code et des difficultes,
+                        Je suis <strong>MIHINDOU NZE Arsene Steed ,</strong><br>Développeur Web et Web mobile à l'école 241.Passionné du code et des difficultes,
                         j'ai l'humble avis de penser que le code est un atout idéal pour nous aider à apporter des solutions aux problèmes que nous pouvons rencontrer dans la vie de tous les jours et même plus.<encore class="span" id="dots">[...]</encore>
                     </p>
                     <p id="readmore">    
                         Aujourd'hui, je me sens prêt à intégrer une entreprise où je pourrai quotidiennement vivre de ma passion : Le Développement Web ! <strong>Moi c'est Arsene, 23 ans,</strong> 
-                        et j'ai pris la décision de me reconvertir professionnellement.<br>
-                        <strong>"La solution est dans le code."</strong>
+                        et j'ai pris la décision de me reconvertir professionnellement.
                     </p>
                     <button id="Read" onclick="Read()" class="Btn">Lire la suite</button>
-                    <a href="mihindoumeddy@gmail.com">arsene@okacode.dev</a>
+                    <a href="mihindoumeddy@gmail.com" class="email">arsene@okacode.dev</a>
                 </div>
             </div>
         </section>
         <!-- COMPETENCE -->
         <section id="COMPETENCE">
             <div class="skill">
-                <h2 class="title" id="skill">Competences</h2>
+                <h2 class="title" id="skill">COMPETENCE</h2>
                     <div class="contenair-skill">
                     <div class="skill__progress_bar">
                         <div>
@@ -148,60 +152,88 @@
         </section>
         <!-- REALISATION -->
         <SECTION id="REALISATION">
-            <div class="contenair-realisation">
-                <h3 class="headline">Realisations</h3>
-                <div class="realisation">
-                    <div class="lienrealisation">
-                        <img src="assets/img/lettre.png" alt="Lettre motivation" title="Lettre de motivation" width="350px">
-                        <div><a href="#">Lettre de motivation</a></div>
-                    </div>
-                    <div class="lienrealisation">
-                        <img src="assets/img/liste.png" alt="Liste okacode" title="LISTE okacode" width="300px">
-                        <div><a href="#">Liste okacode</a></div>
-                    </div>
-                    <div class="lienrealisation">
-                        <img src="assets/img/portfolio.png" alt="Premier portfolio" title="Premier portfolio" width="350px">
-                        <div><a href="#">Mon premier portfolio</a></div>
-                    </div>
-                    <div class="lienrealisation">
-                        <img src="assets/img/metojob.png" alt="Meteo-jobs" title="Meteo-jobs" width="350px">
-                        <div><a href="#">Integration img</a></div>
+            <h2 class="title">REALISATION</h2>
+                <div class="contenair-realisation">
+                    <div class="realisation">
+                        <div class="partieOne">
+                            <div class="lienrealisation">
+                                <div class="travail1"></div>
+                                <a href="#" class="aRealisation">Lettre de motivation</a>
+                            </div>
+                            <div class="lienrealisation">
+                                <div class="travail2"></div>
+                                <a href="#" class="aRealisation">Liste okacode</a>
+                            </div>
+                        </div>
+                        <div class="partieTwo">
+                            <div class="lienrealisation">
+                                <div class="travail3"></div>
+                                <a href="#" class="aRealisation">Mon premier portfolio</a>
+                            </div>
+                            <div class="lienrealisation">
+                                <div class="travail4"></div>
+                                <a href="#" class="aRealisation">Integration img</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+    
         </SECTION>
+                <!-- CENTRE D'INTERET -->
         <!-- FOOTER -->
-        <footer>
             <section id="INFOS">
-                <div class="contenair-infos">
-                        <div class="monBlog">
-                            <p>
-                                <strong>MON BLOG</strong><br></br>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, earum suscipit adipisci perspiciatis reprehenderit
-                                quidem mollitia 
-                                vitae maxime, consequuntur dicta expedita, numquam iure quia perferendis vero labore laudantium accusantium eligendi?
-                            </p>
-                        </div>
-                        <div class="ul">
-                            <h3>PLUS D'INFOS</h3>
-                            <ul>
-                                <li><a href="#ACCUEIL">ACCUEIL</a></li>
-                                <li><a href="#">MON BLOG</a></li>
-                                <li><a href="#">FACEBOOCK</a></li>
-                            </ul>
-                        </div>
+                <footer>
+                    <div class="ulContact">
+                        <ul>
+                            <li>Arsene Steed</li>
+                            <a href="mihindoumeddy@gmail.com">arsene@okacode.dev</a>
+                            <li><a href="#">Linkedingue</a></li>
+                        </ul>
                     </div>
-                </div>
+                    <div class="tableau">
+                        <form action="#">
+                            <span class="titleForm">Me contacter</span>
+                            <div class="inputPrenom">
+                                <input type="text" name="prenom" id="prenom">
+                            </div>
+                            <div class="inputEmail">
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message *"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </footer>
             </section>
-            <p class="fait-par"> ©Copyright by MIHINDOU-NZE - 2020 0KACODE</p>
-        </footer>
-        <!-- ==========
-        script button read
-        ============ -->
-        <script>
-var i=0,readmore=document.getElementById("readmore"),dots=document.getElementById("dots"),btn=document.getElementById("Read");function Read(){0==i?(readmore.style.display="block",dots.style.display="none",btn.innerHTML="Fermer",i=1):(readmore.style.display="none",dots.style.display="block",btn.innerHTML="Lire la suite",i=0)}
-        </script>
     </main>
-    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="flat"> <p></p>www.flaticon.com</a>
+    <section class="versionMobile">
+        <div class="imgPorfil">
+            
+            <div class="menuFooter">
+                <ul class="foot">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="presentation">
+                <span><strong>MIHINDOU-NZE</strong> Arsene S.</span>
+                <span>Developper Web & Web mobile</span>
+            </div>
+            <div class="menu">
+                <ul class="head">
+                    <li><a href="assets/mobile/moi.html">moi</a></li>
+                    <li><a href="assets/mobile/skills.html">skills</a></li>
+                    <li><a href="assets/mobile/realisation.html">realisations</a></li>
+                </ul>
+            </div>
+        </div>  
+    </section>
+   <div class="none"> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" class="flat"> <p></p>www.flaticon.com</a></div>
 </body>
 </html>
+
+
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci dolorem cumque dignissimos recusandae amet reiciendis odio labore eum, laboriosam cupiditate at qui? Unde, amet. Unde vero blanditiis placeat eius nisi?
